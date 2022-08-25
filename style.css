@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Sans-Fransisco;
+    src: url(font/SF-Pro-Display-Medium.otf);
+}
+
+body{
+    margin: 0;
+}
+
+
+/* INI ADALAH PAGE KE 1 */
+
+.container{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header{
+    font-family: Sans-Fransisco;
+    font-weight: lighter;
+}
+
+#submitBtn{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: 235px;
+    height: 30px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#submitBtn:hover{
+    box-shadow: 2px 2px 10px rgb(68, 68, 68);
+    cursor: pointer;
+    
+}
+
+#nameInput{
+    height: 40px;
+    width: 235px;
+    color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+    font-weight: 500;
+}
+
+#username{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 100px;
+    box-shadow: 0 0 10px white;
+}
+
+::placeholder{
+    text-align: center;
+    bottom: 10px;
+}
+
+::-webkit-input-placeholder{
+    text-align: center;
+}
+
+
+/* INI ADALAH PAGE KE 2 */
+
+#secondPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+}
+
+.malang{
+    text-align: center;
+    font-family: Sans-Fransisco;
+    font-size: x-large;
+    color: white;
+    
+}
+
+.tokyo{
+    text-align: center;
+    font-family: Sans-Fransisco;
+    font-size: x-large;
+    color: white;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
