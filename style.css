@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Sans-Fransisco;
+    src: url(font/SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: Jumper;
+    src: url(font/JumperPERSONALUSEONLY-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    max-width: fit-content;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+/* INI ADALAH PAGE KE 1 */
+
+.container{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: transitionIn 0.75s;
+}
+
+.header{
+    font-family: Sans-Fransisco;
+    font-weight: lighter;
+}
+
+#submitBtn{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    width: 235px;
+    height: 30px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#submitBtn:hover{
+    box-shadow: 2px 2px 10px rgb(68, 68, 68);
+    cursor: pointer;
+    
+}
+
+#nameInput{
+    height: 40px;
+    width: 235px;
+    color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+    font-weight: 500;
+}
+
+#username{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 100px;
+    box-shadow: 0 0 10px white;
+}
+
+::placeholder{
+    text-align: center;
+    bottom: 10px;
+}
+
+::-webkit-input-placeholder{
+    text-align: center;
+}
+
+
+/* PAGE KE 2 */
+
+#secondPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    animation: transitionIn 0.75s;
+}
+
+.container-nd{
+    margin-top: 150px;
+}
+
+.malang{
+    text-align: center;
+    font-family: Sans-Fransisco;
+    font-size: x-large;
+    color: white;
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.tokyo{
+    text-align: center;
+    font-family: Sans-Fransisco;
+    font-size: x-large;
+    color: white;
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.txt{
+    gap: 5;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 65%;
+}
+
+.newtxt{
+    text-align: center;
+    font-family: Jumper;
+    font-size: x-large;
+    letter-spacing: 2px;
+    color:rgb(255, 255, 255)
+}
+
+.note{
+    font-family: Sans-Fransisco;
+    font-size: xx-small;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.tokyo img{
+    width: 200px;
+    height: 200px;
+}
+
+.mlgimg{
+    width: 200px;
+    height: 200px;
+}
+
+.plane img{
+    width: 50px;
+    height: 50px;
+}
+
+.plane{
+    align-items: center;
+    margin-left: 650px;
+    margin-top: 90px;
+    position: absolute;
+    animation: planeTransition 5s ease-in-out;
+    animation-iteration-count: infinite;
+    max-width: auto;
+}
+
+/* .plane:hover { */
+    /* animation: planeTransition 5s ease-in-out; */
+/* } */
+
+@keyframes planeTransition {
+    from{
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(335px);
+    }
+}
